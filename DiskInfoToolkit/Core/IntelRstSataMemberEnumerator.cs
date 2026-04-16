@@ -340,7 +340,6 @@ namespace DiskInfoToolkit.Core
             }
 
             string controllerKey = StringUtil.FirstNonEmpty(
-                device.Controller.Identifier,
                 device.Controller.HardwareID,
                 device.Controller.Service,
                 device.Controller.Name);
@@ -361,7 +360,6 @@ namespace DiskInfoToolkit.Core
             }
 
             string controllerKey = StringUtil.FirstNonEmpty(
-                controller.Identifier,
                 controller.HardwareID,
                 controller.Service,
                 controller.Name);
